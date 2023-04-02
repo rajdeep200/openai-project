@@ -2,7 +2,7 @@ export const services = [
     {
         id: 1,
         title: "Create an Upwork Job Proposal",
-        path: "/proposalPage"
+        path: "/proposals"
     },
     {
         id: 2,

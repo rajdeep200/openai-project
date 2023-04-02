@@ -9,7 +9,7 @@ import { getResponse } from "../../services/getResponse";
 import getConfig from "next/config";
 const { publicRuntimeConfig } = getConfig();
 
-const proposal = () => {
+const proposals = () => {
   const [title, setTitle] = useState("");
   const [jobDesc, setJobDesc] = useState("");
   const [jobPrice, setJobPrice] = useState("");
@@ -182,4 +182,4 @@ const proposal = () => {
   );
 };
 
-export default proposal;
+export default proposals;

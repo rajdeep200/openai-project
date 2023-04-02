@@ -1,6 +1,7 @@
+import React from 'react'
 import { useRouter } from "next/router";
 
-const service = ({ title, path }) => {
+const Service = ({title, path}) => {
   const router = useRouter();
   return (
     <div
@@ -11,7 +12,7 @@ const service = ({ title, path }) => {
         {title}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default service;
+export default Service
