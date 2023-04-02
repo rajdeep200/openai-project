@@ -20,7 +20,6 @@ const proposals = () => {
   const [proposalCopied, setProposalCopied] = useState(false);
 
   const handleSubmit = async () => {
-    setLoading(true);
     setProposalCopied(false);
     const cryptr = new Cryptr(publicRuntimeConfig.CRYPTR_SECRET_KEY);
     // setIsModalOpen(true);
@@ -38,6 +37,7 @@ const proposals = () => {
       !invalidJobPrice &&
       !invalidPaymentType
     ) {
+      setLoading(true);
       const { data } = await getResponse(title, jobDesc, jobPrice, paymentType);
       if (data && data.status) {
         setLoading(false);
