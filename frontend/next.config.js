@@ -4,6 +4,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     // Will be available on both server and client
     API_URL: process.env.API_URL,
+    CRYPTR_SECRET_KEY: process.env.CRYPTR_SECRET_KEY
   }
 }
 
